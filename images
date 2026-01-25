@@ -3,5 +3,6 @@
 <body>
     <img src="dir.jpg" width="60%" height="100%">
     <img src="emp.jpg" width="60%" height="100%">
+    <img src="emp.jpg" align="left" border="3" width="20%" height="200" style="margin:20px;">
 </body>
 </html>
