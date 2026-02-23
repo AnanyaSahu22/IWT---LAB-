@@ -1,0 +1,171 @@
+<html> 
+<head> 
+<title>series</title> 
+<script language="JavaScript"> 
+/*WHILE LOOP*/
+/*var i=1; 
+while(i<=10) 
+{ 
+document.write("<h1>"+"value of i="+i+"</h1>"); 
+i++; 
+} */
+/*var num=7,prd=1,sum=0,rem;
+while (num|=0)
+{
+rem=num%2;
+sum=sum+rem*prd;
+prd=prd*10;
+num=num/2;
+}
+document.write("Binary Equivalent is",sum);
+/*DO WHILE LOOP*/
+/*var num=654,rev=0,rem;
+do
+{
+rem=num%10;
+rev=rev*10+rem;
+num=num/10;
+}
+while(num|=0);
+document.write("Reversed Value"+rev);*/
+/*var i;
+for(i=50;i>=5;i=i-5)
+document.write("value of i="+i);*/
+/*var i,sum=0,prd=1; 
+for(i=1;i<=10;i++) 
+{ 
+if(i%2==0) 
+sum=sum+i; 
+else 
+prd=prd*i; 
+} 
+document.write("value of sum="+sum+"<br>"); 
+document.write("value of prd="+prd); */
+/*var i,a=0,b=1,sum=0;
+document.write(a+"<br>");
+document.write(b+"<br>");
+for(i=1;i<=8;i++)
+{
+sum=a+b;
+document.write(c+"<br>");
+a=b;
+b=sum;
+}*/
+/*var i,hcf,lcm,a=10,b=20;
+for(i=1;i<=a && i<=b;i++)
+{
+if(a%i==0 && b%i==0)
+hcf=i;
+}
+lcm=(a*b)/hcf;
+document.write("value of hcf="+hcf+"<br>");
+document.write("value of lcm="+lcm);*/
+/*var i,j;
+for(i=1;i<=5;i++)
+{
+for(j=1;j<=i;j++)
+document.write(j);
+document.write("<br>");
+}*/
+/*var i,j,k=1;
+for(i=1;i<=5;i++,k=k+2)
+{
+for(j=i;j<=4;j++)
+document.write("&nbsp&nbsp&nbsp");
+for(j=1;j<=k;j++)
+document.write("*");
+document.write("<br>");*/
+/*var i,j,k=1;
+for(i=1;i<=5;i++)
+{
+for(j=1;j<=i;j++)
+{
+document.write(k);
+k++;
+}
+document.write("<br>");
+}*/
+/*var a=new Array(3,66,12,70,5);
+var i;
+for(i=4;i>=0;i--)
+{
+document.write(a[i]+"<br>");
+}*/
+/*var a = new Array("n","a","y","h","s");
+var b=a.sort();
+document.write(b)*/
+/*var a=new Array(9,33,12,90,6);
+var b=a.push(55);
+var b=a.push(80);
+document.write("<br>");
+var c=a.pop()
+document.write(a);
+document.write("<br>");
+var c=a.join("*");
+
+document.write(c);
+document.write("<br>");
+var d=a.splice(2,0,89,123);
+document.write(d);
+var e=a.slice(1,3);
+document.write(e);
+document.write("<br>");
+var f=a.shift();
+document.write(a);
+document.write("<br>");
+var f=a.unshift(12,8);
+document.write(a);
+document.write("<br>");
+var g=new Array(25,1,123);
+var h=a.concat(g);
+document.write(h);
+document.write("<br>");*/
+
+/*function factorial(n)
+{
+var f=1;
+while(n|=0)
+{
+f=f*n;
+n--;
+}
+return(f);
+}
+document.write("Factorial Value="+factorial(7));*/
+/*var a=prompt("enter first number"); 
+var b=parseInt(a); 
+var c=prompt("enter second number"); 
+var d=parseInt(c); 
+var e=b+d; 
+confirm("would you like to print the output"); 
+document.write("<h1>"+"addition value="+e+"</h1>");
+var a=prompt("enter your age"); 
+var b=parseInt(a); 
+document.write("<h1>"+"Age is "+a+"</h1>"); 
+if(b>=18) 
+alert("you are eligible for vote"); 
+else 
+alert("you are not eligible for vote");*/
+function clock()
+{
+var d=new Date();
+var h=d.getHours();
+var m=d.getMinutes();
+var s=d.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+var t=setTimeout(clock,500);
+}
+function checkTime(i)
+{
+if(i<10)
+{
+i="0"+i;
+}
+return(i);
+}
+</script>
+</head>
+</html>
+ 
