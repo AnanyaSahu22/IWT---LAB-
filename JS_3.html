@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Div Background with Confirmation</title>
+</head>
+<body>
+    <div id="colorBox"></div>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('blue')">Blue</button>
+
+    <script>
+      
+        function changeColor(color) {
+            try {
+               
+                const confirmChange = confirm(`Do you really want to change the background color to ${color}?`);
+                
+                if (confirmChange) {
+                    document.getElementById('colorBox').style.backgroundColor = color;
+                }
+            } catch (error) {
+                console.error("Error changing color:", error);
+                alert("An unexpected error occurred. Please try again.");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Prime</title>
+<script>
+function prime()
+{
+var a=document.f.t1.value;
+let isPrime=true;
+if(a<=1)
+{
+isPrime=false;
+}
+else
+{
+for(let i=2;i*i<=n;i++)
+{
+if(a%i==0)
+{
+isPrime=false;
+break;
+}
+}
+}
+document.write(isPrime? '${a} is a Prime Number' : '${n} is not a prime numer');
+}
+</script>
+</head>
+<body>
+<form name="f">
+Enter a number:<input type="text" id=t1>
+<input type="button" value="isPrime" onclick="prime()">
+</form>
+</body>
+</html>
+

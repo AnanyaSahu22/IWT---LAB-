@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Paragraph Visibility</title>
+</head>
+<body>
+
+<p id="myPara">
+    JAVASCRIPT IS EASIER THAN JAVA TO WRITE EVENT HANDLING CODES . IT SHOULD BE FREQUENTLY USED IN CODING. 
+	Click the button below to hide or show this paragraph dynamically.
+</p>
+
+<button id="toggleBtn">Hide Paragraph</button>
+
+<script>
+    const para = document.getElementById('myPara');
+    const btn = document.getElementById('toggleBtn');
+
+    btn.addEventListener('click', function () {
+        if (para.style.display === 'none') {
+            para.style.display = 'block';
+            btn.textContent = 'Hide Paragraph';
+        } else {
+            para.style.display = 'none';
+            btn.textContent = 'Show Paragraph';
+        }
+    });
+</script>
+
+</body>
+</html>
