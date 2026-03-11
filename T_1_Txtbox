@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="num" value="0">
+
+<button onclick="inc()">+</button>
+<button onclick="dec()">-</button>
+
+<script>
+
+function inc(){
+    let value = document.getElementById("num").value;
+    document.getElementById("num").value = parseInt(value) + 1;
+}
+
+function dec(){
+    let value = document.getElementById("num").value;
+    document.getElementById("num").value = parseInt(value) - 1;
+}
+
+</script>
+
+</body>
+</html>
