@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Enter Dollars:
+<input type="text" id="dollar">
+
+<button onclick="convert()">Convert</button>
+
+<p id="result"></p>
+
+<script>
+
+function convert(){
+let d = document.getElementById("dollar").value;
+let r = d * 83;
+
+document.getElementById("result").innerHTML =
+"Rupees = " + r;
+}
+
+</script>
+
+</body>
+</html>
