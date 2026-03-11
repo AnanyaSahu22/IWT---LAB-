@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Register</h3>
+
+Password:
+<input type="password" id="pass"><br><br>
+
+Confirm Password:
+<input type="password" id="cpass"><br><br>
+
+<button onclick="check()">Submit</button>
+
+<p id="msg"></p>
+
+<script>
+
+function check(){
+
+let p = document.getElementById("pass").value;
+let cp = document.getElementById("cpass").value;
+
+if(p === cp){
+document.getElementById("msg").innerHTML = "Passwords match";
+}
+else{
+document.getElementById("msg").innerHTML = "Passwords do not match";
+}
+
+}
+
+</script>
+
+</body>
+</html>
